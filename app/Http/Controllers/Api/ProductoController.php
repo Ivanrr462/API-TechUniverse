@@ -107,8 +107,8 @@ class ProductoController extends Controller
         $sortMap = [
             'precio_asc' => ['precio', 'asc'],
             'precio_desc' => ['precio', 'desc'],
-            'novedad_asc' => ['created_at', 'asc'],
-            'novedad_desc' => ['created_at', 'desc'],
+            'novedad_asc' => ['updated_at', 'asc'],
+            'novedad_desc' => ['updated_at', 'desc'],
         ];
 
         $sort = $request->query('sort');
