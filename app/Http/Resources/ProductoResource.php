@@ -33,7 +33,7 @@ class ProductoResource extends JsonResource
             'foto' => $this->foto && $this->foto !== ''
                 ? (str_starts_with($this->foto, 'http')
                     ? $this->foto
-                    : env('R2_PUBLIC_URL').'/'.$this->foto)
+                    : rtrim(config('filesystems.disks.r2.url', ''), '/').'/'.$this->foto)
                 : 'https://pub-45ac6957fba64f04a0f8a0fd40292c60.r2.dev/productos/dvEcf0VxtjxaHq3yAHBw9uQr4CW4keFw3GFAUvqa.jpg',
 
             'categoria' => $this->categoria ? [

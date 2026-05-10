@@ -13,9 +13,9 @@ class ProductoSeeder extends Seeder
     public function run(): void
     {
         // Smartphones (30)
-        Producto::create(['nombre' => 'iPhone 15 Pro Max', 'precio' => 1299.99, 'descuento' => 15, 'stock' => 25, 'descripcion' => 'Smartphone de última generación con A17 Pro chip', 'categoria_id' => 1, 'foto' => 'https://pub-45ac6957fba64f04a0f8a0fd40292c60.r2.dev/productos/01KQM3BT7CJK4AH97T04R1DXFT.jpg']);
+        Producto::create(['nombre' => 'iPhone 15 Pro Max', 'precio' => 1299.99, 'descuento' => 15, 'stock' => 25, 'descripcion' => 'Smartphone de última generación con A17 Pro chip', 'categoria_id' => 1, 'foto' => 'https://pub-45ac6957fba64f04a0f8a0fd40292c60.r2.dev/productos/VyxmkO4Al4iRsZfxfYDpLOuf2QlIMvjABYNyKikQ.jpg']);
         Producto::create(['nombre' => 'Samsung Galaxy S24 Ultra', 'precio' => 1199.99, 'stock' => 30, 'descripcion' => 'Flagship Samsung con AI y cámara 200MP', 'categoria_id' => 1, 'foto' => 'https://pub-45ac6957fba64f04a0f8a0fd40292c60.r2.dev/productos/01KQZ4W9EZN0PG9V4Y61QH4JVM.jpg']);
-        Producto::create(['nombre' => 'Google Pixel 8 Pro', 'precio' => 999.99, 'stock' => 20, 'descripcion' => 'Smartphone Google con procesamiento de AI', 'categoria_id' => 1]);
+        Producto::create(['nombre' => 'Google Pixel 8 Pro', 'precio' => 999.99, 'stock' => 20, 'descripcion' => 'Smartphone Google con procesamiento de AI', 'categoria_id' => 1, 'foto' => 'https://pub-45ac6957fba64f04a0f8a0fd40292c60.r2.dev/productos/aO6qk6TQ2YK4sLPk5QRXph6AQzrsGJVIEcHykiO3.jpg']);
         Producto::create(['nombre' => 'OnePlus 12', 'precio' => 899.99, 'stock' => 15, 'descripcion' => 'Smartphone con carga rápida 100W', 'categoria_id' => 1]);
         Producto::create(['nombre' => 'Xiaomi 14 Ultra', 'precio' => 799.99, 'descuento' => 10, 'stock' => 22, 'descripcion' => 'Smartphone con sensor Leica 1 pulgada', 'categoria_id' => 1]);
         Producto::create(['nombre' => 'iPhone 15', 'precio' => 999.99, 'stock' => 28, 'descripcion' => 'iPhone con Dynamic Island y USB-C', 'categoria_id' => 1]);
