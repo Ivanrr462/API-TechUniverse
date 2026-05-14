@@ -10,13 +10,13 @@ class ProductoResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'id'              => $this->id,
-            'nombre'          => $this->nombre,
-            'precio'          => (float) $this->precio,
-            'descuento'       => (float) ($this->descuento ?? 0),
+            'id' => $this->id,
+            'nombre' => $this->nombre,
+            'precio' => (float) $this->precio,
+            'descuento' => (float) ($this->descuento ?? 0),
             'precioDescuento' => $this->precio_descuento,
-            'stock'           => $this->stock,
-            'descripcion'     => $this->descripcion,
+            'stock' => $this->stock,
+            'descripcion' => $this->descripcion,
 
             'modificado' => $this->updated_at
                 ? $this->updated_at->format('Y-m-d H:i:s')
@@ -31,7 +31,7 @@ class ProductoResource extends JsonResource
             'especificaciones' => $this->productoEspecificaciones->map(function ($productoEspec) {
                 return [
                     'nombre' => $productoEspec->especificacion->nombre,
-                    'valor'  => $productoEspec->valor,
+                    'valor' => $productoEspec->valor,
                 ];
             }),
         ];

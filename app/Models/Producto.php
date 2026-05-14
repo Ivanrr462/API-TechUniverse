@@ -15,7 +15,7 @@ class Producto extends Model
 
     public function getPrecioDescuentoAttribute(): float
     {
-        $precio   = (float) $this->precio;
+        $precio = (float) $this->precio;
         $descuento = (float) ($this->descuento ?? 0);
 
         return $descuento > 0

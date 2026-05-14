@@ -20,13 +20,13 @@ class CategoriaConProductosResource extends JsonResource
             'nombre' => $this->nombre,
             'productos' => $this->productos->map(function ($producto) {
                 return [
-                    'id'              => $producto->id,
-                    'stock'           => $producto->stock,
-                    'nombre'          => $producto->nombre,
-                    'foto'            => $producto->foto_url,
-                    'descripcion'     => $producto->descripcion,
+                    'id' => $producto->id,
+                    'stock' => $producto->stock,
+                    'nombre' => $producto->nombre,
+                    'foto' => $producto->foto_url,
+                    'descripcion' => $producto->descripcion,
                     'precio_unitario' => (float) $producto->precio,
-                    'descuento'       => (float) ($producto->descuento ?? 0),
+                    'descuento' => (float) ($producto->descuento ?? 0),
                     'precioDescuento' => $producto->precio_descuento,
                 ];
             }),
