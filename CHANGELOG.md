@@ -6,6 +6,24 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.0.
 
 ---
 
+## [1.2.0]
+
+### ✨ Añadido
+- Nuevo panel administrativo y endpoint de ofertas.
+- Descuentos configurables para productos.
+- Nuevas fotos y mejoras en los seeders.
+
+### 🔧 Cambiado
+- Mejoras en los resources y correcciones aplicadas en Swagger y pruebas.
+- Ajustes de lint y calidad de código.
+- Limpieza y refactor del panel de administración previo.
+
+### 🐛 Corregido
+- Errores en la subida de fotos.
+- Problemas de Cloudflare y compatibilidad en recursos.
+
+---
+
 ## [1.1.0]
 
 ### ✨ Añadido

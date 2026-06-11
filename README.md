@@ -108,14 +108,18 @@ Cada versión refleja nuevas funcionalidades, mejoras internas y cambios en la a
 
 ---
 
-### 🟦 Versión **1.1.0** (actual)
+### 🟦 Versión **1.2.0** (actual)
 
-#### 🔢 Endpoint de Count
-- `GET /api/productos/count` — devuelve el total de productos.
+#### ✨ Novedades principales
+- Panel administrativo renovado con acceso mejorado y gestión de ofertas.
+- Endpoint de ofertas para obtener promociones activas en productos.
+- Descuentos dinámicos aplicables a productos desde el backend.
+- Mejoras en carga de imágenes, seeder actualizado con nuevas fotos y placeholders.
 
-#### 🔃 Ordenación de productos
-- Parámetro opcional `?sort` en `GET /api/productos`.
-- Valores: `precio_asc`, `precio_desc`, `novedad_asc`, `novedad_desc`.
+#### 🔧 Mejoras internas
+- Correcciones de Swagger y recursos API.
+- Ajustes de lint y calidad de código.
+- Refactor de recursos y ajustes en pruebas.
 
 ---
 
